@@ -14,3 +14,4 @@ print(conceitos_freq)
 barplot(conceitos_freq)
 
 hist(notas_turma$Nota, freq=T, breaks= c(0,5,7,9,10))
+
