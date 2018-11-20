@@ -5,10 +5,12 @@ conceitos <- c('A','B','F','A','A','D','B','A','B','A','B','F')
 print(notas)
 
 notas_turma <- read.csv("./IA/notas_turma - final.csv",header = T)
-print(notas_turma_csv)
-str(notas_turma_csv)
+print(notas_turma)
+str(notas_turma)
 
 conceitos_freq <- table(notas_turma$Conceito)
 print(conceitos_freq)
 
 barplot(conceitos_freq)
+
+hist(notas_turma$Nota, freq=T, breaks= c(0,5,7,9,10))
